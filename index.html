@@ -1,0 +1,130 @@
+<title>Weather Inspiration Map</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gradient-to-br from-orange-50 to-pink-100 min-h-screen">
+
+
+  <div class="container mx-auto px-4 py-8">
+    <!-- Header -->
+    <header class="text-center mb-10">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 gradient-text tracking-tight leading-tight">
+          🌦️ Weather Inspiration Map
+        </h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto" id="header-carousel">
+            Cargando inspiración...
+          </p>
+      </header>
+
+    <!-- Main Content -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Map Section -->
+      <div class="lg:col-span-2">
+        <div class="bg-white/30 backdrop-blur-sm p-4 rounded-2xl shadow-lg">
+          <div id="map" class="w-full"></div>
+        </div>
+      </div>
+
+      <!-- Weather Info Section -->
+      <div class="space-y-6">
+        <!-- Weather Card -->
+        <div class="weather-card p-6 shadow-lg">
+          <!-- Info encabezado -->
+          <div class="flex justify-between items-center mb-4">
+            <h2 class="text-2xl font-bold text-gray-800">Información del Clima</h2>
+            <div class="pulse bg-blue-100 p-2 rounded-full">
+              <i class="fas fa-map-marker-alt text-blue-500 text-xl"></i>
+            </div>
+          </div>
+
+        <!-- Info clima -->
+        <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="info-box text-center">
+            <p class="text-sm text-gray-500 mb-1">Temperatura</p>
+            <p class="text-lg font-bold text-gray-800" id="temperature">--°C</p>
+            </div>
+        
+            <div class="info-box text-center">
+            <p class="text-sm text-gray-500 mb-1">Viento</p>
+            <p class="text-lg font-bold text-gray-800" id="wind">-- km/h</p>
+            </div>
+        
+            <div class="info-box text-center">
+            <p class="text-sm text-gray-500 mb-1">Humedad</p>
+            <p class="text-lg font-bold text-gray-800" id="humidity">--%</p>
+            </div>
+        
+            <div class="info-box text-center">
+            <p class="text-sm text-gray-500 mb-1">Índice UV</p>
+            <p class="text-lg font-bold text-gray-800" id="uv">--</p>
+            </div>
+        </div>
+
+          <!-- Ubicación -->
+          <div class="flex items-center justify-between bg-gradient-to-r from-blue-100 to-indigo-100 p-4 rounded-xl">
+            <div>
+              <h3 class="font-semibold text-gray-800" id="location">Selecciona una ubicación</h3>
+              <p class="text-gray-600 text-sm" id="time">--</p>
+            </div>
+            <div class="weather-icon">
+              <img id="weather-icon" src="" alt="Weather Icon" class="w-16 h-16">
+            </div>
+          </div>
+        </div>
+
+        <!-- Inspiration Card -->
+        <div class="inspiration-card p-6 shadow-lg">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-lightbulb text-yellow-500 text-2xl mr-3"></i>
+            <h2 class="text-2xl font-bold text-gray-800">Inspiración Diaria</h2>
+          </div>
+
+          <div class="bg-yellow-50 p-4 rounded-xl min-h-40 flex items-center justify-center">
+            <p class="text-gray-700 italic text-center" id="phrase">
+              Haz clic en el mapa para obtener una frase inspiradora basada en el clima.
+            </p>
+          </div>
+
+          <div id="loading-spinner" class="hidden">
+            <div class="spinner"></div>
+          </div>
+          <div class="mt-4 text-center">
+            <button id="refresh-btn" class="btn-refresh">
+              <i class="fas fa-sync-alt mr-2"></i> Actualizar Inspiración
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-gray-500 text-sm">
+      <p>© 2025 Weather Inspiration Map | Hecho con <i class="fas fa-heart text-red-500"></i> y <i class="fas fa-cloud-sun text-blue-500"></i></p>
+    </footer>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- CHAT GPT -->
+  <!-- <script src="script.js"></script> -->
+
+   <!-- HUGGING -->
+  <!-- <script src="script_v_hugging.js"></script> -->
+
+  <!-- SALAMANDRA -->
+  <script src="script_v_salamandra.js"></script>
+
+</body>
+</html>

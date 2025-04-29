@@ -1,0 +1,19 @@
+# Ignorar la carpeta donde npm instala paquetes
+node_modules/
+
+# Ignorar logs
+logs
+*.log
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de entorno
+.env
+
+# Ignorar resultados de tests (si usas testing)
+coverage/
+
+# Ignorar cachés (opcionalmente)
+.cache/

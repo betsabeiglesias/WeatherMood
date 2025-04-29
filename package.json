@@ -1,0 +1,15 @@
+{
+  "name": "emoticlima",
+  "version": "1.0.0",
+  "description": "App que consulta el tiempo y genera frase motivadora",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Betsabé Iglesias",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2"
+  }
+}
