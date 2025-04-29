@@ -104,18 +104,3 @@ ollama run llama3
 - También puedes actualizar la frase pulsando **Actualizar Inspiración**.
 
 ---
-
-## 📦 Estructura del proyecto
-
-```plaintext
-WeatherMood/
-├── index.html
-├── styles.css
-├── script.js
-├── server.js
-├── .env.example
-├── package.json
-└── README.md
-```
-
----
