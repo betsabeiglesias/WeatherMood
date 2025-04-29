@@ -58,7 +58,6 @@ function startApp(env) {
       });
   });
 
-  // refrescar botón
   const refreshBtn = document.getElementById("refresh-btn");
   if (refreshBtn) {
     refreshBtn.addEventListener("click", () => {
@@ -75,7 +74,6 @@ function startApp(env) {
     });
   }
 
-  // carrusel
   const carouselPhrases = [
     "Haz clic en el mapa y deja que el clima te inspire con una frase única.",
     "Un lugar, un clima, una frase para ti.",
@@ -94,7 +92,6 @@ function startApp(env) {
   setInterval(changeCarouselPhrase, 5000);
   window.addEventListener("DOMContentLoaded", changeCarouselPhrase);
 
-  // Función para actualizar fondo según clima
   function updateBackgroundByWeather(clima) {
     const body = document.body;
     if (clima.includes("sun") || clima.includes("clear")) {
@@ -115,7 +112,6 @@ function startApp(env) {
     }
   }
 
-  // Lógica para mostrar el clima
   function getInfo(data) {
     const summary = {
       city: data.location.name,

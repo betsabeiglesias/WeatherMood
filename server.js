@@ -10,7 +10,6 @@ const path = require("path");
 const app = express();
 const PORT = 3000;
 
-// Servir archivos estáticos (index.html, styles.css, scripts JS, etc.)
 app.use(express.static(__dirname));
 
 app.get("/env", (req, res) => {
@@ -21,12 +20,10 @@ app.get("/env", (req, res) => {
   });
 });
 
-// Ruta principal
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-// Arrancar el servidor
 app.listen(PORT, () => {
   console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });
