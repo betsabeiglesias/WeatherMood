@@ -83,7 +83,7 @@ Asegúrate de que Ollama esté corriendo en `localhost:11434`.
 Luego, carga el modelo si es necesario:
 
 ```bash
-ollama run salamandra
+ollama run hdnh2006/salamandra-7b-instruct
 ```
 
 o
