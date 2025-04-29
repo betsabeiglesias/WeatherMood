@@ -104,3 +104,29 @@ ollama run llama3
 - También puedes actualizar la frase pulsando **Actualizar Inspiración**.
 
 ---
+
+## 📁 Estructura del proyecto
+
+```
+WeatherMood/
+├── public/
+│   ├── index.html
+│   ├── js/
+│   │   └── script.js
+│   └── styles/
+│       └── styles.css
+├── server.js
+├── .env.example
+├── package.json
+├── package-lock.json
+├── README.md
+├── LICENSE
+```
+
+---
+
+## 📝 Licencia
+
+Este proyecto está licenciado bajo la [MIT License](LICENSE).
+
+---
