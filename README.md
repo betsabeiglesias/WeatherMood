@@ -15,9 +15,6 @@
 
 ---
 
-![WeatherMood Banner](assets/weathermood_banner.png)
-
-
 ## ⚙️ Requisitos previos
 
 Antes de comenzar asegúrate de tener instalado:
@@ -32,6 +29,9 @@ Antes de comenzar asegúrate de tener instalado:
 - Una API Key válida de [WeatherAPI.com](https://www.weatherapi.com/)
 
 ---
+
+![WeatherMood Banner](assets/weathermood_banner.png)
+
 
 ## 🛠️ Instalación y configuración
 
