@@ -1,7 +1,5 @@
 # WeatherMood 🌦️✨
 
-![WeatherMood Banner](assets/weathermood_banner.png)
-
 **WeatherMood** es una aplicación web interactiva que combina información meteorológica en tiempo real con generación de frases motivadoras, basadas en el clima actual de cualquier ubicación seleccionada en el mapa.
 
 ---
@@ -16,6 +14,9 @@
 - **Ollama** (modelo de lenguaje Llama3 o Salamandra para generación de texto)
 
 ---
+
+![WeatherMood Banner](assets/weathermood_banner.png)
+
 
 ## ⚙️ Requisitos previos
 
